@@ -1,4 +1,4 @@
-nstall Jenkins.
+Install Jenkins.
 Pre-Requisites:
 
 Java (JDK)
