@@ -1,1 +1,5 @@
+FROM ubuntu 
+
+WORKDIR /app
+
 
