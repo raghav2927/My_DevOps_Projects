@@ -1,13 +1,15 @@
-# BASE IMAGE ######
+###########################################
+# BASE IMAGE
+###########################################
 
 FROM ubuntu AS build
 
-Run apt-get update && apt-get install -y golang-go
+RUN apt-get update && apt-get install -y golang-go
 
-ENV GO111MODULE=OFF
+ENV GO111MODULE=off
 
-COPY
+COPY . .
 
-RUN CGO_ENABLED-0 go build -o /app .
+RUN CGO_ENABLED=0 go build -o /app .
 
 ENTRYPOINT ["/app"]
